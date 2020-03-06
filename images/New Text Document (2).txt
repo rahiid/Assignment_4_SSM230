@@ -1,0 +1,47 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: tahoma;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: #08c;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.container{
+    width: 1140px;
+    margin: 24px auto;
+    background-color: #fff;
+    height: 100vh;
+    border-radius: 0px;
+}
+
+.row{
+    width: 100%;
+    float: left;
+}
+
+col-md-4{
+    width: 33.33%;
+    float: left;
+}
+col-md-6{
+    width: 50%;
+    float: left;
+}
+col-mid-12{
+    width: 100%;
+    float: left;
+}
