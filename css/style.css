@@ -22,28 +22,31 @@ a:hover{
 }
 
 .container{
-    width: 1140px;
+	width: 1140px;
     margin: 0px auto;
+    
 }
 
 .row{
-    width: 100%;
-    float: left;
-}
-
-.col-md-4{
-    width: 33.33%;
-    float: left;
-}
-
-.col-md-6{
-    width: 50%;
-    float: left;
+	width: 100%;
+	float: left;
 }
 
 .col-md-12{
-    width: 100%;
-    float: left;
+	width: 100%;
+	float: left;
+}
+.col-md-4{
+	width:33.33%;
+	float: left;
+}
+.col-md-3{
+	width: 25%;
+	float: left;
+}
+.col-md-6{
+	width: 50%;
+	float: left;
 }
 
 /*************************
@@ -69,6 +72,7 @@ a:hover{
 .logo .navbar-brand{
     /* padding: 10px 0px; */
 }
+
 
 /*********************************
 ********Header Section END******** 
@@ -230,50 +234,176 @@ a:hover{
 *******Portfolio Section Start******
 ************************************/
 
-.portfolio{
-    width: 100%;
-    float: left;
-    padding: 80px 0px;
-    background: #f9f9f9;
-    position: relative;
 
+.portfolio{
+	width: 100%;
+	float: left;
+	padding: 80px 0px;
+	background: #f6f9f9;
+	position: relative;
 }
 .portfolio-inner{
-    width: 100%;
-    position: relative;
-
+	width: 100%;
+	position: relative;
 }
 
-.port-inner{
-    width: 100%;
-    height: 100%;
+.portfolio-inner .port-inner {
+    width: 95%;
+    height: 98%;
     position: absolute;
     left: 0;
     top: 0;
-    background: rgb(4, 101, 247);
+    background: rgb(21,164,250, .6 );
     text-align: center;
+    display: none;
+    transition: 1s;
 
-} 
+}
+.portfolio-inner:hover .port-inner{
+	display: block;
+	transition: 1s;
+}
+.port-inner ul{
+	position: absolute;
+	top: 40%;
+	left:35%;
+}
 .port-inner ul li{
-    list-style: none;
-    display: inline-block;
-
+	list-style: none;
+	display: inline-block;
 }
-
 .port-inner ul li a{
-
-
+	margin:0px 5px; 
 }
-
 .port-inner ul li a i{
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    border-radius: 5px;
-    border: 1px solid #fff;
-    color: #fff;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 22px;
 }
+.mar{
+	margin-top: 15px;
+}
+
+
 
 /***********************************
 ********Portfolio Section End*******
+************************************/
+
+
+
+/***********************************
+*****Contact Area Section Start*****
+************************************/
+
+
+
+.contact-area{
+	width: 100%;
+	float: left;
+	padding: 80px 0px;
+	background: url(../images/cb.png) center top no-repeat;
+	background-size: cover;
+}
+
+.contact-area h1 {
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #fff;
+}
+.contact-area p{
+	font-size: 14px;
+    line-height: 24px;
+    color: #a7a8a8;
+    font-weight: normal;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.contact-inner{
+	color: #fff;
+}
+.form-group{
+	width: 100%;
+}
+.form-control{
+
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	background: transparent;
+	border: 1px solid #999;
+	border-radius: 3px;
+}
+.text-right{
+	text-align: right;
+}
+.contact-inner .btn{
+	padding: 10px 25px;
+	background: transparent;
+	color: #fff;
+	border:1px solid #fff;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+/***********************************
+******Contact Area Section End******
+************************************/
+
+
+
+/***********************************
+****Footer Section Section Start****
+************************************/
+
+
+.footer-section{
+	width: 100%;
+	float: left;
+	background: #f6f9f9;
+	padding: 15px 0px;
+}
+.footer-section p {
+    font-size: 12px;
+    color: #999;
+    margin-top: 15px;
+}
+.social-icons{
+	width: 100%;
+	text-align: right;
+}
+
+.social-icons ul li{
+	list-style: none;
+	display: inline-block;
+}
+.social-icons ul li a{
+	text-align: center;
+
+}
+.social-icons ul li a i{
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 0px;
+	background: #15A4FA;
+	border: 1px solid #15A4FA;
+	color: #fff;
+	font-size: 22px;
+}
+.social-icons ul li a i:hover{
+	background: transparent;
+	border: 1px solid #15A4FA;
+	color: #15A4FA;
+}
+
+/***********************************
+*****Footer Section Section End*****
 ************************************/
